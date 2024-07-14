@@ -76,6 +76,7 @@ For now, this application allows only one feature (searching for article) but mu
 
 If the project needs to grow, these are the subjects we can work on to make development easier.
 
+* More unit tests (e.g. ensure `Article#pg_search_scope` is defined with the right parameters)
 * Coding style guideline (e.g. rubocop)
 * Better seeds
 

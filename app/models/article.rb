@@ -4,6 +4,6 @@ class Article < ApplicationRecord
   validates :title, presence: true
 
   pg_search_scope :search,
-                  against: [:title, :tags],
+                  against: [:title, :html_content, :tags],
                   using: { tsearch: {prefix: true} }
 end
