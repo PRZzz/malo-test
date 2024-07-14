@@ -47,6 +47,9 @@ gem "bootsnap", require: false
 # PSQL Fulltext Search
 gem "pg_search"
 
+# CSS Framework
+gem "tailwindcss-rails", "~> 2.6"
+
 group :development, :test do
   gem "byebug"
   gem "factory_bot_rails"

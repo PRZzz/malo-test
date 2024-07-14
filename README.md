@@ -48,6 +48,7 @@ Below are lists of developments that would improve this project, organized by ca
 
 All the listed evolutions here should be done as soon as possible.
 
+* Paginate results from `ArticlesController#index` (with infinite scroll using turbo frames?)
 * Add a tsvector column to the `articles` table => this will improve performance by a lot and will be important when there will be more rows in the table
 
 ### Features
@@ -69,4 +70,5 @@ If the project needs to grow, these are the subjects we can work on to make deve
 ### Minor Improvements
 
 * Better image storing for articles (e.g. multiple quality)
+* Automatically search as the user type
 * Use others psql search features (e.g. trigram)

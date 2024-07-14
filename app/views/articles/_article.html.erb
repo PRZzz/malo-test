@@ -1,0 +1,7 @@
+  <article id="<%= dom_id article %>" class="p-4 sm:p-6 lg:p-4 xl:p-6 space-x-4 sm:space-x-6 lg:space-x-4 xl:space-x-6 flex items-center">
+    <%= image_tag(article.image_url, class: "flex-none rounded-md bg-slate-100", width: "60", height: "88") %>
+     <div class="min-w-0 relative flex-auto">
+        <p class="font-semibold text-slate-900 truncate sm:pr-20"><%= article.title %></p>
+        <p class="font-normal text-slate-400 truncate sm:pr-20 "><%= article.tags.join(', ') %></p>
+     </div>
+  </article>
