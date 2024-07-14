@@ -35,8 +35,11 @@ We would recommend Rails as a tech stack to be inline with our own stack and kno
 
 To run locally the application, follow these steps:
 
+* Install Postgresql
+  * The chosen version must support `pgcrypto` and `plpgsql` extensions (I used version 14.12 when developing)
 * Install the ruby version specified in the `Gemfile`
 * Install dependencies: `bundle install`
+* Setup the database: `rails db:setup`
 * Run the server: `rails server` (or `./bin/dev` if you want to also have live tailwindcss rebuild)
 
 ## Database Structure
