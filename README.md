@@ -3,9 +3,10 @@
 Suggested solution for the [Problem Statement](#problem-statement) described below, as part of Malo's technical test
 
 * [Problem Statement](#problem-statement)
+* [Starting The Application](#starting-the-application)
 * [Database Structure](#database-structure)
-* [Future developments](#future-developments)
-  * [Needed evolutions](#needed-evolutions)
+* [Future Developments](#future-developments)
+  * [Needed Evolutions](#needed-evolutions)
   * [Features](#features)
   * [Code Maintenability](#code-maintenability)
   * [Minor Improvements](#minor-improvements)
@@ -30,6 +31,14 @@ We expect you to spend ~3 hours on the test.
 We would recommend Rails as a tech stack to be inline with our own stack and knowledge
 ```
 
+## Starting The Application
+
+To run locally the application, follow these steps:
+
+* Install the ruby version specified in the `Gemfile`
+* Install dependencies: `bundle install`
+* Run the server: `rails server` (or `./bin/dev` if you want to also have live tailwindcss rebuild)
+
 ## Database Structure
 
 Database was created as simple as possible with only one table (`articles`) that stores everything needed to search for articles (as required in the [Problem Statement](#problem-statement)).
@@ -38,13 +47,13 @@ There are two specifities (which are not that unusual) :
 1. UUID are used as primary key, since I consider them more safe and future-proof.
 2. Postgresql full-text search features are used (but in a very simple way)
 
-## Future developments
+## Future Developments
 
 This project aims to be a **very** simple solution (and could be seen as a proof of concept). There is still a lot to be done if we want it to be production-ready.
 
 Below are lists of developments that would improve this project, organized by category.
 
-### Needed evolutions
+### Needed Evolutions
 
 All the listed evolutions here should be done as soon as possible.
 
